@@ -14,7 +14,6 @@ import SignContract from './components/SignContract/SignContract';
 import OnboardingForm from './components/OnboardingForm/OnboardingForm';
 import TaskGrid from './components/TaskManager/TaskGrid';
 import FileManager from './components/CDN/FileManager';
-import ContentDumpManager from './components/ContentDump/ContentDumpManager';
 import AnalyticsDashboard from './components/Analytics/AnalyticsDashboard';
 import TimeSheet from './components/TimeSheet/TimeSheet';
 import CDNLogin from './components/Auth/CDNLogin';
@@ -102,12 +101,6 @@ function App() {
           <Route path="/tasks" element={
             <ProtectedRoute>
               <TaskGrid />
-            </ProtectedRoute>
-          } />
-          
-          <Route path="/content-dump" element={
-            <ProtectedRoute>
-              <ContentDumpManager />
             </ProtectedRoute>
           } />
           
